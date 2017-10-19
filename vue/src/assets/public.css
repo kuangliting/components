@@ -1,0 +1,145 @@
+body,ul,li,p,h6,h1,h2,h3,h4,h5{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color: #eee;
+}
+body{
+    color: #666;
+    font-family: Verdana, Arial;
+    font-size: 0.8rem;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.main{
+    display:flex;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    overflow: hidden;
+}
+.left-panel{
+    padding:20px;
+    width:300px;
+    overflow: auto;
+}
+.right-panel{
+    position: relative;
+    flex:1;
+    height:100%;
+    overflow: auto;
+}
+.page-panel{
+    margin-left:30px;
+}
+.nav-list ul{
+    margin-left:20px;
+}
+.nav-list>li{
+    margin-left:20px;
+}
+.nav-list .nav-text{
+    display: inline-block;
+    line-height: 30px;
+    font-size:.9rem;
+    margin-left:-4px;
+}
+.sublist .nav-text{
+    margin-left:2px;
+}
+.nav-list .selected .nav-text
+{
+    font-weight: 600;
+}
+.sublist{
+    height:0px;
+    overflow: hidden;
+    transition:height .4s ease;
+}
+.sublist .nav-text{
+    font-size:.8rem;
+}
+.left-panel .nav-title{
+    margin:0px 0px 20px 0px;
+    font-size:27px;
+}
+.left-panel .sub-title{
+    margin:10px 0;
+    font-size:16px;
+}
+.page-panel .m-title{
+    margin:30px 0 60px;
+}
+.page-panel .sub-title{
+    padding:15px 0;
+    font-size:25px;
+}
+.page-content .content{
+    height:450px;
+    margin-top:10px;
+    margin-bottom:30px;
+    width:700px;
+    box-shadow:1px 1px 3px rgba(0,0,0,.1);
+    background-color: #fff;
+    overflow: auto;
+}
+.page-content:nth-child(2) .content{
+    height:600px
+}
+.page-content:nth-child(4) .content{
+    height:800px
+}
+.page-content:nth-child(6) .content{
+    height:900px
+}
+.page-content:nth-child(7) .content{
+    height:600px
+}
+.page-content:nth-child(3) .content{
+    height:200px
+}
+.sptxt{
+    color: #4682BE;
+    font-size: 0.7rem;
+}
+.content-text{
+    font-size:30px;
+    margin:60px auto 0;
+    text-align: center;
+}
+.line-nb{
+    display: inline-block;
+    width:22px;
+    text-align: right;
+}
+
+.selected .p1{
+    height:0;
+}
+.selected .p1{
+    height:32px
+}
+.selected .p2{
+    height:64px
+}
+.selected .p3{
+    height:96px
+}
+.selected .p4{
+    height:128px
+}
+.selected .p5{
+    height:160px
+}
+.selected .p6{
+    height:192px
+}
+
+

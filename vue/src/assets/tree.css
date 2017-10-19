@@ -1,0 +1,42 @@
+
+#demo {
+    color: #666;
+    font-size: 14px;
+}
+.title {
+    font-weight: bold;
+    cursor: pointer;
+}
+.delete{
+    display: none;
+    margin-left:10px;
+    color:#F44336;
+    font-weight: 500;
+}
+.title:hover{
+    color:#333;
+}
+.title:hover>.delete{
+    display: inline-block;
+}
+.message{
+    cursor:pointer;
+}
+.message:hover>.delete{
+    display: inline-block;
+}
+.puls, .subtract {
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+    width:30px;
+    margin:0px 5px;
+    text-align: center;
+}
+ul {
+    margin: 0;
+    padding-left: 2em;
+}
+li {
+    line-height: 35px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="./assets/public.css">
+</head>
+<body>
+<div id="demo" class="main">
+    <div class="left-panel">
+        <h1 class="nav-title">框架学习</h1>
+        <h5 class="sub-title">作者：***</h5>
+        <div><span>目录</span></div>
+        <ul class="nav-list">
+            <li v-for=" (t,i) in topics" :class="(selected == i)? 'selected' :'' ">
+              <span class="line-nb">{{i+1}}.</span>  <a class="nav-text sptxt" href="##"  @click="gopage(t,i)"  >{{t.title}}</a>
+                <ul :class="getclass(t.subs.length)" >
+                    <li  v-for="(sub,j) in t.subs"   >
+                        <span class="line-nb">{{j+1}}</span><a class="nav-text" href="##">{{sub.subtitle}}</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+<div class="right-panel" id="rollpanel">
+ <div class="page-panel">
+     <!--<h1 class="m-title">{{title}}</h1>-->
+     <div v-for=" (t,i) in topics" class="page-content" :page="t.title" >
+         <h3 class="sub-title">{{t.title}}</h3>
+         <div class="content"> <p class="content-text" >内容展示...</p></div>
+     </div>
+ </div>
+</div>
+</div>
+<script src="./build/bundle.js"></script>
+</body>
+</html>
